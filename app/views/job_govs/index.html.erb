@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Job Govs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Post</th>
+      <th>Vacancy</th>
+      <th>Qualification</th>
+      <th>Fitness</th>
+      <th>Age</th>
+      <th>Place</th>
+      <th>Fee</th>
+      <th>Date</th>
+      <th>Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @job_govs.each do |job_gov| %>
+      <tr>
+        <td><%= job_gov.post %></td>
+        <td><%= job_gov.vacancy %></td>
+        <td><%= job_gov.qualification %></td>
+        <td><%= job_gov.fitness %></td>
+        <td><%= job_gov.age %></td>
+        <td><%= job_gov.place %></td>
+        <td><%= job_gov.fee %></td>
+        <td><%= job_gov.date %></td>
+        <td><%= job_gov.link %></td>
+        <td><%= link_to 'Show', job_gov %></td>
+        <td><%= link_to 'Edit', edit_job_gov_path(job_gov) %></td>
+        <td><%= link_to 'Destroy', job_gov, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Job Gov', new_job_gov_path %>

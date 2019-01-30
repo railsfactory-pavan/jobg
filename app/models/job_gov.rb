@@ -1,0 +1,2 @@
+class JobGov < ApplicationRecord
+end

@@ -1,0 +1,62 @@
+<%= form_with(model: job_gov, local: true) do |form| %>
+  <% if job_gov.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(job_gov.errors.count, "error") %> prohibited this job_gov from being saved:</h2>
+
+      <ul>
+      <% job_gov.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :post %>
+    <%= form.text_field :post %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vacancy %>
+    <%= form.text_field :vacancy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :qualification %>
+    <%= form.text_field :qualification %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fitness %>
+    <%= form.text_field :fitness %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.text_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :place %>
+    <%= form.text_field :place %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fee %>
+    <%= form.text_field :fee %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

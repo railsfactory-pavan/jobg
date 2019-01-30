@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @job_gov.post %>
+</p>
+
+<p>
+  <strong>Vacancy:</strong>
+  <%= @job_gov.vacancy %>
+</p>
+
+<p>
+  <strong>Qualification:</strong>
+  <%= @job_gov.qualification %>
+</p>
+
+<p>
+  <strong>Fitness:</strong>
+  <%= @job_gov.fitness %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @job_gov.age %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @job_gov.place %>
+</p>
+
+<p>
+  <strong>Fee:</strong>
+  <%= @job_gov.fee %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @job_gov.date %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @job_gov.link %>
+</p>
+
+<%= link_to 'Edit', edit_job_gov_path(@job_gov) %> |
+<%= link_to 'Back', job_govs_path %>

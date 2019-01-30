@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post: MyString
+  vacancy: MyString
+  qualification: MyString
+  fitness: MyString
+  age: MyString
+  place: MyString
+  fee: MyString
+  date: MyString
+  link: MyString
+
+two:
+  post: MyString
+  vacancy: MyString
+  qualification: MyString
+  fitness: MyString
+  age: MyString
+  place: MyString
+  fee: MyString
+  date: MyString
+  link: MyString
